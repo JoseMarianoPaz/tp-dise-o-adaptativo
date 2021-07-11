@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+*/ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --fontSize-texto: 12px;
+    --fontsize-titulares:24px;
+    --fontSize-precios:18px;
+    --fontSize-descripcion:16px;
+    --fontSize-descuentos:16px;
+  }
+:root{
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-grisOscuro:#666;
+    --color-Grisclaro: #ebebeb;
+    --color-Verde: #39b54a;;
+}
+
+/*header*/
+
+body{
+    font-family: var(--font-family);
+}
+body header{
+    background-color:var(--color-amarillo);
+    padding-bottom: 22px ;
+}
+.home .logo{
+width: 50%;
+padding: 25px 15px 0px;
+margin: 0px 10px 0px;}
+
+body header .lupa .buscador{
+    padding: 10px 20px;
+}
+body header section .cuota{
+    font-size: 12px;
+    text-align: center;
+}
+.barra .menu a{
+    text-decoration: none;
+   color: black;
+   padding: 0%;
+}
+.barra .menu .lista1{
+   font-size:var(--fontSize-texto);
+   padding: 2% 0%;
+   list-style: none;
+   display: none;
+   
+}
+body header .burguer-menu {
+    text-align: center;
+
+  
+}
+body header .burguer-menu .burguer{
+    display: inline-block;
+   font-size: 20px;
+    background-color: var(--color-celeste);
+    color:var(--color-Grisclaro);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*main*/
+body main{
+    width: 90%;
+    /*ver body main article inquietud en el border de main */
+}
+body main div.banner img{
+    width: 111%;
+} 
+body main section img{
+    width: 100%;
+}
+body main section.cuerpo h2{
+font-size: var(--fontsize-titulares);;
+padding: 5px 12px 10px;
+    width: 111%;
+    background-color:var(--color-Grisclaro); 
+    border: 1px solid var(--color-Grisclaro);
+     
+}
+body main i{
+    color: var(--color-Verde);
+    border-radius: 50%;
+    border:solid 1px var(--color-celeste);
+    margin: 6px 10px;
+    padding: 8px 3px;
+    width: 45px;
+    height: 45px;
+}
+body main section h4.oferta{
+font-size: var(--fontsize-titulares);;
+border-left: 13px solid var(--color-Grisclaro);
+    width: 111%;
+    background-color:var(--color-Grisclaro);  
+}
+body main article{
+    width: 111%;
+    border: 15px solid var(--color-Grisclaro);
+   
+    /*ver el porque el borde no lo toma al 100% sin tner el width al 111%*/
+}
+body main section article div.producto div.pdd{
+    border-top: solid 1px var(--color-celeste);  
+}
+body main section div h4{
+    padding-top: 15px;
+    display: none;
+}
+main section article .producto .precio{
+    font-size:var(--fontSize-precios);
+    padding-left: 9px;
+     
+}
+main section article .producto .descuento{
+    font-size: var(--fontSize-descuentos);
+    color: var(--color-Verde);
+    padding-left: 9px;
+    padding-bottom: 10px;
+
+}
+
+/*footer*/
+
+footer .icon {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer h3{
+    font-size: var(--fontSize-descripcion);
+    text-align: center;
+}
+footer p{
+    font-size: var(--fontSize-texto);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media (min-width:361px) {
+    body header{
+        background-color:var(--color-amarillo);
+        padding-bottom: 15px ;
+    }
+    body header .burguer-menu .burguer{
+        display: none;
+    }
+   
+    body main section div h4{
+        display: inline-block;
+        padding-top: 15px;
+    }
+    .barra .menu .lista1{
+        font-size:var(--fontSize-texto);
+        padding: 0%;
+        list-style: none;
+        display: inline;
+     }
+     body main section article div.producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+     }
+    }
+
+@media (min-width:769px){
+    body header{
+        background-color:var(--color-amarillo);
+        padding-bottom: 15px ;
+    }
+    body header .burguer-menu .burguer{
+        display: none;
+    }
+   
+    body main section div h4{
+        display: inline-block;
+        padding-top: 15px;
+    }
+    .barra .menu .lista1{
+        font-size:var(--fontSize-texto);
+        padding: 0%;
+        list-style: none;
+        display: inline;
+     }
+     body main section article div.producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+     }
+    }
+/*van  antes del @media son pruebas*/
+/*box-shadow: 0px 0px 10px rgb(100, 100, 100); me falta ponerlo*/
+
+/*body main{
+    display: inline-block;
+    width: 95%;
+    margin-left: 22px;
+*/ 
+ /*encontrar otra forma de centar*/
